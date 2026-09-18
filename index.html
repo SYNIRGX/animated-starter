@@ -1,89 +1,52 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="A motion-first creative playground for expressive web animation." />
-    <title>Motion / Playground</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <div class="noise" aria-hidden="true"></div>
-    <div class="cursor cursor-dot" aria-hidden="true"></div>
-    <div class="cursor cursor-ring" aria-hidden="true"></div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="A living archive of visual languages for the web." />
+  <title>FORM / The Art of Web Design</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Archivo+Black&family=Space+Grotesk:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&family=Unbounded:wght@400;600;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="cursor cursor-dot" aria-hidden="true"></div><div class="cursor cursor-ring" aria-hidden="true"></div>
+  <header class="topbar"><a class="logo magnetic" href="#top"><span class="logo-mark">✳</span> FORM<span class="slash">/</span>ARCHIVE</a><span class="top-status"><i></i> 12 VISUAL LANGUAGES / 2024</span><a class="index-link magnetic" href="#index">INDEX <span>↘</span></a></header>
 
-    <header class="site-header">
-      <a class="brand magnetic" href="#top" aria-label="Motion home">
-        <span class="brand-mark"><i></i><i></i><i></i></span>
-        <span>motion<span class="accent">/</span>lab</span>
-      </a>
-      <nav class="nav-links" aria-label="Main navigation">
-        <a href="#experiments">Experiments</a>
-        <a href="#playground">Playground</a>
-        <a href="#about">About</a>
-      </nav>
-      <a class="header-cta magnetic" href="#playground">Try it <span>↗</span></a>
-    </header>
+  <main id="top">
+    <section class="intro-panel" data-style="intro">
+      <div class="intro-copy reveal"><p class="kicker">An atlas of digital aesthetics</p><h1>The web is a<br /><i>material.</i></h1><p class="intro-dek">A scrollable field guide to the visual languages that shape our screens. Twelve styles, twelve moods, one moving canvas.</p><a class="scroll-cue" href="#brutalism"><span>↓</span> Begin the tour</a></div>
+      <div class="central-orbit" aria-label="Rotating design index"><div class="orbit orbit-outer"></div><div class="orbit orbit-middle"></div><div class="orbit orbit-inner"></div><div class="orbit-core"><span>FORM</span><b>✳</b></div><div class="orbit-label label-north">AESTHETIC<br />ENGINE</div><div class="orbit-label label-east">SCROLL<br />TO ROTATE</div><div class="orbit-label label-south">01—12</div><div class="orbit-label label-west">FORM / 001</div></div>
+      <div class="intro-foot"><span>↓ SCROLL TO EXPLORE</span><span>THE ART OF WEB DESIGN</span><span>© FORM ARCHIVE</span></div>
+    </section>
 
-    <main id="top">
-      <section class="hero section-pad">
-        <div class="hero-orbit orbit-one"></div>
-        <div class="hero-orbit orbit-two"></div>
-        <div class="hero-copy reveal">
-          <p class="eyebrow"><span class="eyebrow-dot"></span> A playground for expressive motion</p>
-          <h1>Make the web<br /><em>move</em> differently<span class="hero-period">.</span></h1>
-          <p class="hero-intro">An experimental toolkit for designers and developers who believe every interaction deserves a little more feeling.</p>
-          <div class="hero-actions">
-            <a class="button button-primary magnetic" href="#playground">Explore motion <span>↓</span></a>
-            <a class="text-link" href="#experiments">View experiments <span>↗</span></a>
-          </div>
-        </div>
-        <div class="hero-meta reveal reveal-delay">
-          <span>Scroll to explore</span>
-          <span class="scroll-line"></span>
-          <span>01 / 04</span>
-        </div>
-        <div class="hero-stage" aria-hidden="true">
-          <div class="stage-grid"></div>
-          <div class="stage-orb"></div>
-          <div class="stage-ring stage-ring-a"></div>
-          <div class="stage-ring stage-ring-b"></div>
-          <div class="stage-label label-top">ease: <b>inOut</b></div>
-          <div class="stage-label label-bottom">x: 064&nbsp;&nbsp; y: 128</div>
-          <div class="stage-cross cross-a">+</div>
-          <div class="stage-cross cross-b">+</div>
-        </div>
-      </section>
+    <section class="style-section brutalism" id="brutalism" data-style="brutalism" data-index="01"><div class="style-bg-word">BRUTE</div><div class="section-grid"><div class="section-number reveal">01 <span>/ 12</span></div><div class="style-header reveal"><p class="kicker">01 — Raw / Direct / Unapologetic</p><h2>Brutal<span>ism</span></h2><p>Honest materials, hard edges and an intentional refusal to make things comfortable. Brutalism lets the browser show its bones.</p><a href="#maximalism" class="section-next">NEXT LANGUAGE <b>↓</b></a></div><div class="brute-poster reveal"><div class="poster-stamp">NO<br />FRILLS</div><strong>THIS<br />IS A<br /><u>WEBSITE</u></strong><small>EST. 2014 / ANTI-PERFECTION</small></div><div class="brute-ticker">RAW HTML&nbsp;&nbsp; LOUD TYPE&nbsp;&nbsp; ZERO POLISH&nbsp;&nbsp; RAW HTML&nbsp;&nbsp; LOUD TYPE&nbsp;&nbsp;</div></div></section>
 
-      <section class="ticker" aria-label="Motion principles">
-        <div class="ticker-track"><span>DESIGN WITH INTENT</span><i>✳</i><span>CREATE A REACTION</span><i>✳</i><span>FIND YOUR RHYTHM</span><i>✳</i><span>DESIGN WITH INTENT</span><i>✳</i><span>CREATE A REACTION</span><i>✳</i></div>
-      </section>
+    <section class="style-section maximalism" id="maximalism" data-style="maximalism" data-index="02"><div class="max-sun"></div><div class="max-sticker sticker-a">MORE<br />IS MORE</div><div class="max-sticker sticker-b">WOW!</div><div class="section-grid"><div class="section-number reveal">02 <span>/ 12</span></div><div class="style-header reveal"><p class="kicker">02 — Excess / Layer / Delight</p><h2>Maxi<span>malism</span></h2><p>Every surface is an invitation. Maximalism stacks color, type, texture and motion until the interface becomes an atmosphere.</p><a href="#minimalism" class="section-next">NEXT LANGUAGE <b>↓</b></a></div><div class="max-collage reveal"><span class="collage-type">LOUD<br /><i>AND</i><br />PROUD</span><span class="collage-burst">✦</span><span class="collage-pill">CLICK ME ↗</span><span class="collage-note">too much?<br />never.</span></div></div></section>
 
-      <section class="experiments section-pad" id="experiments">
-        <div class="section-heading reveal"><p class="eyebrow">Selected experiments</p><h2>Small gestures.<br /><span>Big energy.</span></h2><p class="heading-note">A collection of tiny interactions that make digital spaces feel alive.</p></div>
-        <div class="experiment-grid">
-          <article class="experiment-card card-spring reveal"><div class="card-top"><span>01 / spring</span><span class="card-arrow">↗</span></div><div class="spring-ball"></div><div class="card-bottom"><h3>Elastic orbit</h3><p>soft collision / playful tension</p></div></article>
-          <article class="experiment-card card-type reveal reveal-delay"><div class="card-top"><span>02 / type</span><span class="card-arrow">↗</span></div><div class="type-demo"><span>move</span><span>with</span><span>intention</span></div><div class="card-bottom"><h3>Kinetic type</h3><p>words in motion / meaning amplified</p></div></article>
-          <article class="experiment-card card-grid reveal reveal-delay-2"><div class="card-top"><span>03 / grid</span><span class="card-arrow">↗</span></div><div class="grid-demo"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div><div class="card-bottom"><h3>Living system</h3><p>order, chaos / delightful surprise</p></div></article>
-        </div>
-      </section>
+    <section class="style-section minimalism" id="minimalism" data-style="minimalism" data-index="03"><div class="minimal-line"></div><div class="section-grid"><div class="section-number reveal">03 <span>/ 12</span></div><div class="style-header reveal"><p class="kicker">03 — Restraint / Clarity / Quiet</p><h2>Mini<span>malism</span></h2><p>Less, but better. Minimalism creates room for a single idea to become clear, considered and impossible to ignore.</p><a href="#glassmorphism" class="section-next">NEXT LANGUAGE <b>↓</b></a></div><div class="minimal-object reveal"><span>form</span><div></div><small>the confidence<br />of empty space</small></div></div></section>
 
-      <section class="playground section-pad" id="playground">
-        <div class="playground-intro reveal"><p class="eyebrow">Interactive playground</p><h2>Find your<br /><em>frequency.</em></h2><p>Move your cursor over the field. There is no wrong way to make something move.</p></div>
-        <div class="playground-panel reveal reveal-delay">
-          <div class="panel-toolbar"><span class="live-dot"></span><span>LIVE PREVIEW</span><span class="toolbar-spacer"></span><span class="mono">FIELD_001</span><button class="reset-button" type="button">Reset ↺</button></div>
-          <div class="playfield" id="playfield"><div class="field-glow"></div><div class="field-word">feel<br /><i>the</i><br />shift</div><div class="field-pointer">move here <span>→</span></div><div class="field-coordinates">x: <b id="coord-x">000</b><br />y: <b id="coord-y">000</b></div></div>
-          <div class="panel-footer"><span>interaction / cursor field</span><span>velocity: <b id="velocity">00.0</b></span><span>status: <b class="status-live">active</b></span></div>
-        </div>
-      </section>
+    <section class="style-section glassmorphism" id="glassmorphism" data-style="glassmorphism" data-index="04"><div class="glass-blob blob-one"></div><div class="glass-blob blob-two"></div><div class="section-grid"><div class="section-number reveal">04 <span>/ 12</span></div><div class="style-header reveal"><p class="kicker">04 — Blur / Depth / Transparency</p><h2>Glass<span>morphism</span></h2><p>Soft layers float over luminous color. Glassmorphism turns hierarchy into depth, asking us to look through the interface.</p><a href="#skeuomorphism" class="section-next">NEXT LANGUAGE <b>↓</b></a></div><div class="glass-card reveal"><span class="glass-icon">✦</span><strong>TRANSPARENT<br />THINKING</strong><small>layer 04 / 12</small><div class="glass-card-line"></div></div></div></section>
 
-      <section class="manifesto section-pad" id="about"><div class="manifesto-number">04</div><div class="manifesto-content reveal"><p class="eyebrow">The manifesto</p><h2>Motion is not<br />decoration. It is<br /><span>communication.</span></h2><p class="manifesto-copy">The best interactions do more than look good. They guide, reassure, surprise, and create a sense of place. This is a space to explore that language.</p><a class="text-link" href="#top">Back to the top <span>↑</span></a></div><div class="manifesto-mark" aria-hidden="true">✳</div></section>
-    </main>
+    <section class="style-section skeuomorphism" id="skeuomorphism" data-style="skeuomorphism" data-index="05"><div class="section-grid"><div class="section-number reveal">05 <span>/ 12</span></div><div class="style-header reveal"><p class="kicker">05 — Familiar / Tactile / Physical</p><h2>Skeuo<span>morphism</span></h2><p>Digital objects borrow the language of the physical world. Buttons look pressable, surfaces cast shadows and pixels gain weight.</p><a href="#neobrutalism" class="section-next">NEXT LANGUAGE <b>↓</b></a></div><div class="skeuo-device reveal"><div class="device-screen"><span>PLAYLIST</span><strong>Morning<br />Momentum</strong><i>▶</i></div><div class="device-controls"><b>◀</b><span class="device-knob"></span><b>▶</b></div></div></div></section>
 
-    <footer class="site-footer section-pad"><span>© 2024 motion/lab</span><span>Built for the curious <span class="accent">✳</span></span><a href="#top">Top ↑</a></footer>
-    <script src="script.js"></script>
-  </body>
+    <section class="style-section neobrutalism" id="neobrutalism" data-style="neobrutalism" data-index="06"><div class="neo-star">✦</div><div class="section-grid"><div class="section-number reveal">06 <span>/ 12</span></div><div class="style-header reveal"><p class="kicker">06 — Optimism / Contrast / Utility</p><h2>Neo<span>brutalism</span></h2><p>Brutalism gets a friendly update: punchy colors, chunky borders and a generous dose of fun. Serious design with a wink.</p><a href="#y2k" class="section-next">NEXT LANGUAGE <b>↓</b></a></div><div class="neo-card reveal"><span>HELLO<br />WORLD!</span><button>PRESS ME ↗</button><small>GOOD VIBES ONLY</small></div></div></section>
+
+    <section class="style-section y2k" id="y2k" data-style="y2k" data-index="07"><div class="y2k-grid"></div><div class="section-grid"><div class="section-number reveal">07 <span>/ 12</span></div><div class="style-header reveal"><p class="kicker">07 — Chrome / Cyber / Nostalgia</p><h2>Y2<span>K</span></h2><p>A hopeful vision of the future, remembered through chrome gradients, pixel type and the charming optimism of the early internet.</p><a href="#editorial" class="section-next">NEXT LANGUAGE <b>↓</b></a></div><div class="y2k-object reveal"><div class="chrome-sphere"></div><span>WELCOME<br />2 THE FUTURE</span><small>loading... 87%</small></div></div></section>
+
+    <section class="style-section editorial" id="editorial" data-style="editorial" data-index="08"><div class="section-grid"><div class="section-number reveal">08 <span>/ 12</span></div><div class="style-header reveal"><p class="kicker">08 — Rhythm / Culture / Voice</p><h2>Edit<span>orial</span></h2><p>Borrowed from the page and made fluid for the screen. Editorial design uses proportion, pace and typography to tell a bigger story.</p><a href="#organic" class="section-next">NEXT LANGUAGE <b>↓</b></a></div><div class="editorial-page reveal"><span>THE<br /><i>NEW</i><br />FORM</span><small>VOL. 08 — DIGITAL CULTURE</small><div class="editorial-rule"></div></div></div></section>
+
+    <section class="style-section organic" id="organic" data-style="organic" data-index="09"><div class="organic-shape shape-a"></div><div class="organic-shape shape-b"></div><div class="section-grid"><div class="section-number reveal">09 <span>/ 12</span></div><div class="style-header reveal"><p class="kicker">09 — Fluid / Human / Alive</p><h2>Org<span>anic</span></h2><p>Curves, breathing room and imperfect movement. Organic interfaces feel less engineered and more like something that grew.</p><a href="#cyberpunk" class="section-next">NEXT LANGUAGE <b>↓</b></a></div><div class="organic-note reveal"><span>let it<br /><i>grow</i></span><small>natural motion / soft systems</small></div></div></section>
+
+    <section class="style-section cyberpunk" id="cyberpunk" data-style="cyberpunk" data-index="10"><div class="cyber-scan"></div><div class="section-grid"><div class="section-number reveal">10 <span>/ 12</span></div><div class="style-header reveal"><p class="kicker">10 — Signal / Noise / Resistance</p><h2>Cyber<span>punk</span></h2><p>Neon against the dark. Cyberpunk makes the interface feel hacked, urgent and gloriously alive at the edge of the system.</p><a href="#aurora" class="section-next">NEXT LANGUAGE <b>↓</b></a></div><div class="cyber-terminal reveal"><span>&gt; SYSTEM_ONLINE</span><strong>BREAK<br />THE<br />GRID_</strong><small>ACCESS: GRANTED</small></div></div></section>
+
+    <section class="style-section aurora" id="aurora" data-style="aurora" data-index="11"><div class="aurora-wave"></div><div class="section-grid"><div class="section-number reveal">11 <span>/ 12</span></div><div class="style-header reveal"><p class="kicker">11 — Atmosphere / Light / Wonder</p><h2>Aur<span>ora</span></h2><p>Gradient as landscape. Aurora design uses light, blur and gentle motion to make the screen feel vast, calm and otherworldly.</p><a href="#index" class="section-next">FINAL LANGUAGE <b>↓</b></a></div><div class="aurora-card reveal"><span>EXPLORE<br /><i>THE</i><br />UNKNOWN</span><small>11 / 12 — KEEP GOING</small></div></div></section>
+
+    <section class="style-section index-section" id="index" data-style="index" data-index="12"><div class="section-grid"><div class="section-number reveal">12 <span>/ 12</span></div><div class="style-header reveal"><p class="kicker">12 — The collection</p><h2>Choose<br /><i>your</i> language.</h2><p>There is no correct aesthetic. The best design language is the one that helps an idea speak with its own voice.</p><a href="#top" class="section-next">BACK TO THE BEGINNING <b>↑</b></a></div><div class="style-list reveal"><a href="#brutalism">01 Brutalism</a><a href="#maximalism">02 Maximalism</a><a href="#minimalism">03 Minimalism</a><a href="#glassmorphism">04 Glassmorphism</a><a href="#skeuomorphism">05 Skeuomorphism</a><a href="#neobrutalism">06 Neobrutalism</a><a href="#y2k">07 Y2K</a><a href="#editorial">08 Editorial</a><a href="#organic">09 Organic</a><a href="#cyberpunk">10 Cyberpunk</a><a href="#aurora">11 Aurora</a><a href="#index">12 Form</a></div></div></section>
+  </main>
+  <footer class="footer"><span>FORM / ARCHIVE</span><span>THE ART OF WEB DESIGN</span><span>SCROLL ≋ REPEAT</span></footer>
+  <script src="script.js"></script>
+</body>
 </html>

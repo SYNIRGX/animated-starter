@@ -1,22 +1,22 @@
-# motion/lab starter
+# FORM / ARCHIVE
 
-A motion-first landing page prototype built with plain HTML, CSS, and JavaScript—no build step required.
+A single-page, no-build visual atlas of web design aesthetics.
+
+## Included
+
+- A central rotating orbital index inspired by motion-led creative sites
+- Twelve scrollable design-language sections, each with its own visual system:
+  Brutalism, Maximalism, Minimalism, Glassmorphism, Skeuomorphism, Neobrutalism, Y2K, Editorial, Organic, Cyberpunk, Aurora and an index
+- Each section is approximately 1.5 viewport heights and explains its design language
+- Scroll-aware section counter and current-style status in the fixed header
+- Animated typography, blobs, chrome, grids, scanlines, orbitals, grain and hover states
+- Responsive mobile layout
+- Custom cursor and reduced-motion accessibility support
 
 ## Run locally
 
-Open `index.html` directly in a browser, or serve the folder with any static server:
+Open `index.html` directly, or serve this folder with:
 
 ```bash
 npx serve .
 ```
-
-## Included
-
-- Animated hero with orbiting visual system
-- Kinetic typography and marquee ticker
-- Hover-reactive experiment cards
-- Interactive cursor playground with coordinates and velocity
-- Scroll-triggered reveal animations
-- Custom cursor on pointer devices
-- Responsive mobile layout
-- `prefers-reduced-motion` support
