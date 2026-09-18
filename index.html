@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A motion-first creative playground for expressive web animation." />
+    <title>Motion / Playground</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="noise" aria-hidden="true"></div>
+    <div class="cursor cursor-dot" aria-hidden="true"></div>
+    <div class="cursor cursor-ring" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <a class="brand magnetic" href="#top" aria-label="Motion home">
+        <span class="brand-mark"><i></i><i></i><i></i></span>
+        <span>motion<span class="accent">/</span>lab</span>
+      </a>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="#experiments">Experiments</a>
+        <a href="#playground">Playground</a>
+        <a href="#about">About</a>
+      </nav>
+      <a class="header-cta magnetic" href="#playground">Try it <span>↗</span></a>
+    </header>
+
+    <main id="top">
+      <section class="hero section-pad">
+        <div class="hero-orbit orbit-one"></div>
+        <div class="hero-orbit orbit-two"></div>
+        <div class="hero-copy reveal">
+          <p class="eyebrow"><span class="eyebrow-dot"></span> A playground for expressive motion</p>
+          <h1>Make the web<br /><em>move</em> differently<span class="hero-period">.</span></h1>
+          <p class="hero-intro">An experimental toolkit for designers and developers who believe every interaction deserves a little more feeling.</p>
+          <div class="hero-actions">
+            <a class="button button-primary magnetic" href="#playground">Explore motion <span>↓</span></a>
+            <a class="text-link" href="#experiments">View experiments <span>↗</span></a>
+          </div>
+        </div>
+        <div class="hero-meta reveal reveal-delay">
+          <span>Scroll to explore</span>
+          <span class="scroll-line"></span>
+          <span>01 / 04</span>
+        </div>
+        <div class="hero-stage" aria-hidden="true">
+          <div class="stage-grid"></div>
+          <div class="stage-orb"></div>
+          <div class="stage-ring stage-ring-a"></div>
+          <div class="stage-ring stage-ring-b"></div>
+          <div class="stage-label label-top">ease: <b>inOut</b></div>
+          <div class="stage-label label-bottom">x: 064&nbsp;&nbsp; y: 128</div>
+          <div class="stage-cross cross-a">+</div>
+          <div class="stage-cross cross-b">+</div>
+        </div>
+      </section>
+
+      <section class="ticker" aria-label="Motion principles">
+        <div class="ticker-track"><span>DESIGN WITH INTENT</span><i>✳</i><span>CREATE A REACTION</span><i>✳</i><span>FIND YOUR RHYTHM</span><i>✳</i><span>DESIGN WITH INTENT</span><i>✳</i><span>CREATE A REACTION</span><i>✳</i></div>
+      </section>
+
+      <section class="experiments section-pad" id="experiments">
+        <div class="section-heading reveal"><p class="eyebrow">Selected experiments</p><h2>Small gestures.<br /><span>Big energy.</span></h2><p class="heading-note">A collection of tiny interactions that make digital spaces feel alive.</p></div>
+        <div class="experiment-grid">
+          <article class="experiment-card card-spring reveal"><div class="card-top"><span>01 / spring</span><span class="card-arrow">↗</span></div><div class="spring-ball"></div><div class="card-bottom"><h3>Elastic orbit</h3><p>soft collision / playful tension</p></div></article>
+          <article class="experiment-card card-type reveal reveal-delay"><div class="card-top"><span>02 / type</span><span class="card-arrow">↗</span></div><div class="type-demo"><span>move</span><span>with</span><span>intention</span></div><div class="card-bottom"><h3>Kinetic type</h3><p>words in motion / meaning amplified</p></div></article>
+          <article class="experiment-card card-grid reveal reveal-delay-2"><div class="card-top"><span>03 / grid</span><span class="card-arrow">↗</span></div><div class="grid-demo"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div><div class="card-bottom"><h3>Living system</h3><p>order, chaos / delightful surprise</p></div></article>
+        </div>
+      </section>
+
+      <section class="playground section-pad" id="playground">
+        <div class="playground-intro reveal"><p class="eyebrow">Interactive playground</p><h2>Find your<br /><em>frequency.</em></h2><p>Move your cursor over the field. There is no wrong way to make something move.</p></div>
+        <div class="playground-panel reveal reveal-delay">
+          <div class="panel-toolbar"><span class="live-dot"></span><span>LIVE PREVIEW</span><span class="toolbar-spacer"></span><span class="mono">FIELD_001</span><button class="reset-button" type="button">Reset ↺</button></div>
+          <div class="playfield" id="playfield"><div class="field-glow"></div><div class="field-word">feel<br /><i>the</i><br />shift</div><div class="field-pointer">move here <span>→</span></div><div class="field-coordinates">x: <b id="coord-x">000</b><br />y: <b id="coord-y">000</b></div></div>
+          <div class="panel-footer"><span>interaction / cursor field</span><span>velocity: <b id="velocity">00.0</b></span><span>status: <b class="status-live">active</b></span></div>
+        </div>
+      </section>
+
+      <section class="manifesto section-pad" id="about"><div class="manifesto-number">04</div><div class="manifesto-content reveal"><p class="eyebrow">The manifesto</p><h2>Motion is not<br />decoration. It is<br /><span>communication.</span></h2><p class="manifesto-copy">The best interactions do more than look good. They guide, reassure, surprise, and create a sense of place. This is a space to explore that language.</p><a class="text-link" href="#top">Back to the top <span>↑</span></a></div><div class="manifesto-mark" aria-hidden="true">✳</div></section>
+    </main>
+
+    <footer class="site-footer section-pad"><span>© 2024 motion/lab</span><span>Built for the curious <span class="accent">✳</span></span><a href="#top">Top ↑</a></footer>
+    <script src="script.js"></script>
+  </body>
+</html>
